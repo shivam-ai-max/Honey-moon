@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4c2c2; /* Light pink background color */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    width: 90%;
+    max-width: 500px;
+    z-index: 1;
+}
+
+.container img {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #f1faee;
+    color: #e63946;
+}
+
+.destination-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.destination {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.destination:hover {
+    background-color: #f1faee;
+    color: #e63946;
+}
+
+.hidden {
+    display: none;
+}
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    display: none; /* Hide video by default */
+    justify-content: center;
+    align-items: center;
+}
+
+#video.show {
+    display: flex; /* Show video when 'show' class is added */
+}
+
+#videoPlayer {
+    width: 100%;
+    height: 100%;
+}
+
+.final-message {
+    font-size: 1.5em;
+    color: #e63946; /* Red color for final message */
+    margin-top: 20px;
+}

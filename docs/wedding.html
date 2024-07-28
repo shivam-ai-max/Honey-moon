@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Wedding Page -->
+    <div id="weddingPage" class="container">
+        <img src="images/image-wedding.jpg" alt="Wedding Image"> <!-- Local image for wedding -->
+        <h1>💍 We Are Married Now! 💍</h1>
+        <p>Now that we are hubby and wifey, all lovey and dovey 🫣💕. Wanna go on a honeymoon, sweetheart 👀?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+        <div id="noOptionMessage" class="message">
+            <span class="angry-cat">😾</span> I told you, no is not an option!
+        </div>
+    </div>
+
+    <!-- Honeymoon Selection -->
+    <div id="honeymoonPage" class="container hidden">
+        <img src="images/image-honeymoon.jpg" alt="Honeymoon Image"> <!-- Local image for honeymoon selection -->
+        <h1>Where should we go then, love?</h1>
+        <div class="destination-options">
+            <button class="destination" data-destination="Japan">Japan</button>
+            <button class="destination" data-destination="Switzerland">Switzerland</button>
+            <button class="destination" data-destination="Bali">Bali</button>
+        </div>
+    </div>
+
+    <!-- Confirmation Page -->
+    <div id="confirmationPage" class="container hidden">
+        <img src="images/image-confirmation.jpg" alt="Confirmation Image"> <!-- Local image for confirmation -->
+        <p class="final-message" id="finalMessage" style="display: none;">
+            Let's live our life together forever, darling. You are my salvation, my home ヾ(＠⌒ー⌒＠)ノ
+        </p>
+    </div>
+
+    <!-- Video -->
+    <div id="video">
+        <video id="videoPlayer" controls>
+            <source id="videoSource" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
